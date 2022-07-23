@@ -1,52 +1,11 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { variables } from '../styles/variabes';
+import { StyledForm, InputGroup, Result, Error } from '../styles/styles';
 import Button from './Button';
-
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-
-  input {
-    -webkit-appearance: none;
-    padding: 0.5rem 1rem;
-    display: inline;
-    color: inherit;
-    border: none;
-    border-radius: 0.5rem;
-    border: 2px solid ${variables.fcText};
-    transition: ease-in 150ms;
-    width: 100%;
-    font-size: inherit;
-
-    &:focus {
-      outline: none;
-      border: 2px solid ${variables.primary};
-    }
-    &:not(:placeholder-shown) {
-      border: 2px solid ${variables.primary};
-    }
-  }
-`;
-
-const InputGroup = styled.div`
-  display: flex;
-  gap: 1rem;
-`;
-
-const Result = styled.span`
-  color: hsl(151, 55%, 50%);
-`;
-
-const Error = styled.span`
-  color: #e44252;
-`;
 
 const Form = () => {
   const [sideA, setSideA] = useState('');
   const [sideB, setSideB] = useState('');
-  const [result, setResult] = useState('');
+  const [result, setResult] = useState(0);
 
   const handleCalc = (e) => {
     e.preventDefault();
