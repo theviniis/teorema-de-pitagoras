@@ -35,19 +35,28 @@ const InputGroup = styled.div`
   gap: 1rem;
 `;
 
-const Result = styled.div`
+const Result = styled.span`
   color: hsl(151, 55%, 50%);
+`;
+
+const Error = styled.span`
+  color: #e44252;
 `;
 
 const Form = () => {
   const [sideA, setSideA] = useState('');
   const [sideB, setSideB] = useState('');
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState('');
 
   const handleCalc = (e) => {
     e.preventDefault();
     const result = Math.round(Math.sqrt(sideA * sideA + sideB * sideB));
-    return setResult(result);
+
+    if (!sideA || !sideB) {
+      return setResult(null);
+    } else {
+      return setResult(result);
+    }
   };
 
   return (
@@ -69,10 +78,10 @@ const Form = () => {
         />
       </InputGroup>
       {result ? (
-        <Result>
-          O valor da hipotenusa é: <b>{result}</b>.
-        </Result>
-      ) : null}
+        <Result>O valor da hipotenusa é: {result}.</Result>
+      ) : (
+        <Error>Insira pelo menos dois valores.</Error>
+      )}
       <Button>Calcular</Button>
     </StyledForm>
   );
