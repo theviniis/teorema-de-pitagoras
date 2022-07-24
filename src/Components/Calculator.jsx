@@ -13,7 +13,6 @@ const Calculator = () => {
         src={triangle}
         alt='Imagem de um triângulo retângulo'
         title='Imagem de um triângulo retângulo'
-        aria-label='Imagem de um triângulo retângulo'
       />
       <p>
         Insira dois lados de um triângulo-retângulo para calcular o valor da

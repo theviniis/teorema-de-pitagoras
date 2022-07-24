@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import { StyledForm, InputGroup, Result, Error } from '../styles/styles';
-import Button from './Button';
+import { StyledForm, InputGroup, Alert, StyledButton } from '../styles/styles';
 
 const Form = () => {
   const [sideA, setSideA] = useState('');
   const [sideB, setSideB] = useState('');
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState(false);
 
   const handleCalc = (e) => {
     e.preventDefault();
-    const result = Math.round(Math.sqrt(sideA * sideA + sideB * sideB));
-
     if (!sideA || !sideB) {
+      setError(true);
       return setResult(null);
     } else {
+      const result = Math.round(Math.sqrt(sideA * sideA + sideB * sideB));
+      setError(false);
       return setResult(result);
     }
   };
@@ -36,12 +37,13 @@ const Form = () => {
           onChange={({ target }) => setSideB(target.value)}
         />
       </InputGroup>
+      {error ? <Alert error>Insira pelo menos dois valores.</Alert> : null}
       {result ? (
-        <Result>O valor da hipotenusa é: {result}.</Result>
-      ) : (
-        <Error>Insira pelo menos dois valores.</Error>
-      )}
-      <Button>Calcular</Button>
+        <Alert>
+          O valor da hipotenusa é: <b>{result}</b>
+        </Alert>
+      ) : null}
+      <StyledButton>Calcular</StyledButton>
     </StyledForm>
   );
 };

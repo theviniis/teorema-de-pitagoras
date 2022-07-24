@@ -57,12 +57,12 @@ export const InputGroup = styled.div`
   gap: 1rem;
 `;
 
-export const Result = styled.span`
-  color: hsl(151, 55%, 50%);
-`;
-
-export const Error = styled.span`
-  color: #e44252;
+export const Alert = styled.span`
+  color: ${({ error }) => (error ? '#e44252' : '#39c682')};
+  background-color: ${({ error }) => (error ? '#e442521f' : '#39c68229')};
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid ${({ error }) => (error ? '#e44252' : '#39c682')};
 `;
 
 export const StyledButton = styled.button`
