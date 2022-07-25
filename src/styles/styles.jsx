@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { variables } from './variabes';
 
+// One single style-sheet page just because the app ir to small.
 export const Wrapper = styled.div`
   max-width: 500px;
   background-color: white;
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
     100px 100px 80px rgba(0, 0, 0, 0.04);
 `;
 
-export const Header = styled.div`
+export const CardHeader = styled.div`
   background-color: ${variables.primary};
   color: white;
   padding: 2rem 1rem;
@@ -58,6 +59,7 @@ export const InputGroup = styled.div`
 `;
 
 export const Alert = styled.span`
+  /* Adapt the color of the Alert component based on props */
   color: ${({ error }) => (error ? '#e44252' : '#39c682')};
   background-color: ${({ error }) => (error ? '#e442521f' : '#39c68229')};
   padding: 1rem;

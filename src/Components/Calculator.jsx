@@ -1,14 +1,14 @@
 import React from 'react';
-import { Wrapper, Header } from '../styles/styles';
+import { Wrapper, CardHeader } from '../styles/styles';
 import { default as triangle } from '../triangle.svg';
 import Form from './Form';
 
 const Calculator = () => {
   return (
     <Wrapper>
-      <Header>
+      <CardHeader>
         Teorema de Pitágoras <br /> Calculadora
-      </Header>
+      </CardHeader>
       <img
         src={triangle}
         alt='Imagem de um triângulo retângulo'

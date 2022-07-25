@@ -1,3 +1,5 @@
+// Some global styling variabless
+
 export const variables = {
   font: `'Open Sans', sans-serif`,
   maxWidth: '70vw',
