@@ -13,11 +13,6 @@ export const Card = styled.div`
   overflow: hidden;
   box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.02),
     100px 100px 80px rgba(0, 0, 0, 0.04);
-
-  > img {
-    margin: auto;
-    max-width: 90%;
-  }
 `;
 
 export const CardHeader = styled.div`
@@ -29,6 +24,11 @@ export const CardHeader = styled.div`
   white-space: nowrap;
   border-radius: 1rem;
   box-shadow: 0px 4px 12px hsla(0, 0%, 0%, 5%);
+`;
+
+export const Triangle = styled.img`
+  margin: auto;
+  max-width: 90%;
 `;
 
 export const StyledForm = styled.form`

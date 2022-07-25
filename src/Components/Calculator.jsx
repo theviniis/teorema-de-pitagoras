@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader } from '../styles/styles';
+import { Card, CardHeader, Triangle } from '../styles/styles';
 import { default as triangle } from '../triangle.svg';
 import Form from './Form';
 
@@ -9,7 +9,7 @@ const Calculator = () => {
       <CardHeader>
         Teorema de Pitágoras <br /> Calculadora
       </CardHeader>
-      <img
+      <Triangle
         src={triangle}
         alt='Imagem de um triângulo retângulo'
         title='Imagem de um triângulo retângulo'
