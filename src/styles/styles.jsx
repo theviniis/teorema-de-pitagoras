@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { variables } from './variabes';
 
 // One single style-sheet page just because the app ir to small.
-export const Wrapper = styled.div`
+export const Card = styled.div`
   max-width: 500px;
   background-color: white;
   display: flex;
@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
   overflow: hidden;
   box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.02),
     100px 100px 80px rgba(0, 0, 0, 0.04);
+
+  > img {
+    margin: auto;
+    max-width: 90%;
+  }
 `;
 
 export const CardHeader = styled.div`

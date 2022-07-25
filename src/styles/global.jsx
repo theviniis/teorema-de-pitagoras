@@ -32,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: hsl(0, 0%, 90%);
     color: ${variables.fcText};
     font-size: 1.25rem;
-    margin: 2vmin;
+    margin: 2vw;
   }
 
   .container {

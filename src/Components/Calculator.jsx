@@ -1,11 +1,11 @@
 import React from 'react';
-import { Wrapper, CardHeader } from '../styles/styles';
+import { Card, CardHeader } from '../styles/styles';
 import { default as triangle } from '../triangle.svg';
 import Form from './Form';
 
 const Calculator = () => {
   return (
-    <Wrapper>
+    <Card>
       <CardHeader>
         Teorema de Pitágoras <br /> Calculadora
       </CardHeader>
@@ -19,7 +19,7 @@ const Calculator = () => {
         hipotenusa.
       </p>
       <Form />
-    </Wrapper>
+    </Card>
   );
 };
 
