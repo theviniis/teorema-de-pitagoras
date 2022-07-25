@@ -2,6 +2,10 @@
 
 Este projeto foi desenvolvido em React utilizando Styled-components (pra matar mosquito com tiro de bazuca) para o teste da vaga de Desenvolvedor de Software.
 
+## Demonstração
+
+Você pode conferir uma demonstração deste aplicativo através da URL: https://pitagoras-calculator.netlify.app/
+
 ## Stack utilizada
 
 **Front-end:** React, Styled-components
@@ -17,6 +21,14 @@ Este projeto foi desenvolvido em React utilizando Styled-components (pra matar m
 - Validar caso um ou dois campos de input estejam vazios e retornar uma mensagem de erro.
 
 - Retornar uma mensagem com o valor da equação.
+
+## Aprendizados
+
+- Um pouco de matemática básica (equação matemática para calcular o valor da hipotenusa).
+
+- Capturar os campos de input de um formulário para poder itera-los.
+
+- Adaptar estilização baseada em props no styled-components.
 
 ## Rodando localmente
 
@@ -51,11 +63,3 @@ Para fazer o deploy desse projeto rode
 ```bash
   npm run deploy
 ```
-
-## Aprendizados
-
-- Um pouco de matemática básica (equação matemática para calcular o valor da hipotenusa).
-
-- Capturar os campos de input de um formulário para poder itera-los.
-
-- Adaptar estilização baseada em props no styled-components.
