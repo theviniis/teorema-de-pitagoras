@@ -1,6 +1,6 @@
 # Calculadora do Teorema de Pitágotas
 
-Este projeto foi desenvolvido em React utilizando Styled-components (pra matar mosquito com tiro de bazuca) para o teste da vaga de Desenvolvedor Front-end.
+Este projeto foi desenvolvido em React utilizando Styled-components (pra matar mosquito com tiro de bazuca) para o teste da vaga de Desenvolvedor de Software.
 
 ## Stack utilizada
 
