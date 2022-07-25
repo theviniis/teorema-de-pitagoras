@@ -18,6 +18,40 @@ Este projeto foi desenvolvido em React utilizando Styled-components (pra matar m
 
 - Retornar uma mensagem com o valor da equação.
 
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://link-para-o-projeto
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd pitagoras-calc
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm start
+```
+
+## Deploy
+
+Para fazer o deploy desse projeto rode
+
+```bash
+  npm run deploy
+```
+
 ## Aprendizados
 
 - Um pouco de matemática básica (equação matemática para calcular o valor da hipotenusa).
