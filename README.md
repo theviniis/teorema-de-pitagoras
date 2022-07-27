@@ -35,7 +35,7 @@ Você pode conferir uma demonstração deste aplicativo através da URL: https:/
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/theviniis/teorema-de-pitagoras.git
 ```
 
 Entre no diretório do projeto
