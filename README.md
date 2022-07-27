@@ -61,5 +61,5 @@ Inicie o servidor
 Para fazer o deploy desse projeto rode
 
 ```bash
-  npm run deploy
+  npm run build
 ```
